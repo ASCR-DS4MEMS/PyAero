@@ -168,7 +168,7 @@ class Batch:
                              'ABAQUS': '.inp',
                              'OBJ': '.obj'}
                 mesh_name = os.path.join(mesh_path, basename + extension[output_format])
-                getattr(Meshing.BlockMesh, 'write'+output_format)(wind_tunnel, name=mesh_name)
+                getattr(Meshing.BlockMesh, 'write'+output_format+'_nolib')(wind_tunnel, name=mesh_name)
 
                 message = f'Finished mesh export for airfoil {airfoil} to {mesh_name}'
                 print(message)
