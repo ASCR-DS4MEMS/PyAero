@@ -12,7 +12,8 @@ setup(
     author_email="chiefenne@nowhere.com",
     license="MIT",
     python_requires=">=3.8",
-    packages=find_packages(),
+    packages=find_packages("src"),
+    package_dir={"": "src"},
     install_requires=requirements,
     classifiers=[
         "Development Status :: 5 - Production/Stable",
