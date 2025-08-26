@@ -38,7 +38,7 @@ PyAero is an open-source airfoil contour analysis and CFD meshing tool written i
  - Run in batch mode (i.e. run PyAero from the command line)
    - Mesh multiple airfoils and export the meshes in multiple formats in one run without user interaction
    - Using the ``-no-gui`` option and a [control file](data/Batch/batch_control.json) in json format
-   - Example command: ``python src/PyAero.py -no-gui data/Batch/batch_control.json``
+   - Example command: ``python pyaero/PyAero.py -no-gui data/Batch/batch_control.json``
  - Simple aerodynamic analysis using [AeroPython](http://nbviewer.ipython.org/github/barbagroup/AeroPython/blob/master/lessons/11_Lesson11_vortexSourcePanelMethod.ipynb)
  - Airfoil contour analysis (gradient, curvature and curvature circle)
  - NOT YET IMPLEMENTED:
@@ -172,14 +172,14 @@ $ echo 'setenv PYAEROPATH path_to_your_installation' >> ~/.cshrc
 Run PyAero using:
 
 ```bash
-$ python $PYAEROPATH/src/PyAero.py
+$ python $PYAEROPATH/pyaero/PyAero.py
 ```
 
 To simplify the command, set an *alias* (the upper beeing for bash and the lower for csh/tcsh).
 
 ```bash
-$ alias pyaero="python $PYAEROPATH/src/PyAero.py"
-$ alias pyaero "python $PYAEROPATH/src/PyAero.py"
+$ alias pyaero="python $PYAEROPATH/pyaero/PyAero.py"
+$ alias pyaero "python $PYAEROPATH/pyaero/PyAero.py"
 ```
 
 To keep this across sessions, again append the *alias* command to the respective *.bashrc*, *.cshrc*, etc.

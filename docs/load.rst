@@ -31,7 +31,7 @@ Load via the inline file browser
 As outlined above there are more ways to load airfoils. A very handy way to browse airfoils is to use the 
 implemented file browser. This browser is restricted in terms of navigation. Only files and folders below a 
 predefined root path are visible. The default root is the :file:`data/Airfoils` subfolder from the 
-standard installation. The root path for airfoils can be changed by the user in the file :file:`src/Settings.py` 
+standard installation. The root path for airfoils can be changed by the user in the file :file:`pyaero/Settings.py` 
 by changing the value of the variable :code:`AIRFOILDATA`.
 
 The file browser is located in the toolbox on the left side of the application. It is the uppermost tab in 

@@ -31,7 +31,7 @@ copyright = year + ', Andreas Ennemoser'
 author = 'Andreas Ennemoser'
 
 # automated detection of version number
-with open('../src/PyAero.py') as f:
+with open('../pyaero/PyAero.py') as f:
     pyaero = f.readlines()
     for line in pyaero:
         if line.startswith('__version__'):
