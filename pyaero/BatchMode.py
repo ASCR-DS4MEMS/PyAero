@@ -1,7 +1,9 @@
 import os
 import json
 
-import PyAero
+path_of_this_file = os.path.dirname(__file__)
+sys.path.append(path_of_this_file)
+
 import Airfoil
 import SplineRefine
 import TrailingEdge
