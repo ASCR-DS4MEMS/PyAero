@@ -1,6 +1,7 @@
 import os
 import json
 
+import PyAero
 import Airfoil
 import SplineRefine
 import TrailingEdge
